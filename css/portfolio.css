@@ -1,0 +1,143 @@
+:root {
+  /* фон */
+  --background-color: #e5e5e5;
+  /* темний фон */
+  --dark-bg-cl: #2f303a;
+  /* первинний коліт тексту/навігація */
+  --primary-text-color: #757575;
+  /* додатковий коліт тексту */
+  --secondary-text-color: #212121;
+  /* акцент для кнопок і навігації */
+  --accent-cl: #2196f3;
+  /* додатковий колір темного фону */
+  --primary-white-color: #ffffff;
+  /* адреса */
+  --address: rgba(255, 255, 255, 0.6);
+}
+
+/* Body */
+.body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.drk-bg {
+  background-color: var(--dark-bg-cl);
+}
+
+/* Навігація */
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-cl);
+}
+
+.site-nav .link.current {
+  color: var(--accent-cl);
+}
+
+.contacts .contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.contacts .contacts:hover,
+.contacts .contacts:focus {
+  color: var(--accent-cl);
+}
+
+/* Товари */
+.cargo .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.cargo .item-title {
+  font-weight: 700;
+  font-size: 18;
+  line-height: 2;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.cargo .position {
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.cargo .list {
+  text-align: center;
+}
+
+/* Кнопки */
+.cargo .btn {
+  font-family: inherit;
+  color: var(--title-text-color);
+  background-color: var(--background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--background-color);
+  background-color: var(--accent-cl);
+}
+
+/* Адресс */
+.address {
+  font-style: normal;
+}
+
+.address .link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+
+.address .mapp {
+  font-family: inherit;
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+
+.address .contact {
+  color: var(--address);
+}
+
+.address :hover,
+.address :focus {
+  color: var(--accent-cl);
+}
