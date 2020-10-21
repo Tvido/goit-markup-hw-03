@@ -15,6 +15,30 @@
   --address: rgba(255, 255, 255, 0.6);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  outline: 3px solid red;
+  width: 1170px;
+  align-items: Center;
+  margin: 0 auto 94px;
+  /* margin: 0 15px 94px; */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.centered {
+  text-align: center;
+}
+
 /* Body */
 .body {
   background-color: var(--background-color);
@@ -28,6 +52,9 @@
 
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .drk-bg {
@@ -84,6 +111,11 @@
   color: var(--secondary-text-color);
 }
 
+.item-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .cargo .position {
   font-size: 16px;
   line-height: 1.875;
@@ -91,14 +123,26 @@
   color: var(--primary-text-color);
 }
 
-.cargo .list {
-  text-align: center;
+.list {
+  margin-top: 0;
+  margin-bottom: 30;
+}
+
+.choise {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* Кнопки */
 .cargo .btn {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 73px;
+  padding: 6px 22px;
+  border: 1px transparent;
   font-family: inherit;
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
   background-color: var(--background-color);
   font-weight: 500;
   font-size: 16px;
@@ -107,6 +151,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 
 .btn:hover,
@@ -117,6 +162,7 @@
 
 /* Адресс */
 .address {
+  padding: 0;
   font-style: normal;
 }
 
