@@ -237,6 +237,10 @@ html {
 }
 
 /* team */
+team {
+  background-color: #fff;
+}
+
 .team-list {
   list-style: none;
   margin-top: 0;
