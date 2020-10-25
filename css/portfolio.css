@@ -22,8 +22,8 @@ html {
 *,
 *::before,
 *::after {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -51,18 +51,6 @@ img {
   margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container-neg {
-  /* outline: 3px solid red; */
-  width: 1200px;
-  align-items: Center;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
   padding-left: 15px;
   padding-right: 15px;
 }

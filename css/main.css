@@ -11,6 +11,8 @@
   --accent-cl: #2196f3;
   /* додатковий колір темного фону */
   --primary-white-color: #ffffff;
+  /* Фон для команди */
+  --secondary-bg-cl: #f5f4fa;
   /* адреса */
   --address: rgba(255, 255, 255, 0.6);
 }
@@ -22,8 +24,8 @@ html {
 *,
 *::before,
 *::after {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -48,18 +50,6 @@ img {
   justify-content: center;
   align-items: Center; */
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container-neg {
-  /* outline: 3px solid red; */
-  width: 1200px;
-  align-items: Center;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -252,17 +242,26 @@ img {
 }
 
 /* team */
-.team {padding-top: 94px;
-padding-bottom: 94px;}
+.team {
+  background-color: var(--secondary-bg-cl);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
 
 .team-list {
+  justify-content: center;
+
   list-style: none;
   margin-top: 0;
   margin-bottom: 30;
   padding: 0;
+  text-align: center;
 }
 
 .team .team-list {
+  margin: 0 auto;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -311,11 +310,6 @@ padding-bottom: 94px;}
 .position {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* Кнопки */
