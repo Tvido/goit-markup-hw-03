@@ -22,7 +22,8 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+margin: 0;
+padding: 0;
 }
 
 img {
@@ -45,11 +46,11 @@ img {
 .container {
   /* outline: 3px solid red; */
   width: 1200px;
-  align-items: Center;
+  /* align-items: Center;
   margin-top: 0;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 94px;
+  margin-right: auto; */
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -158,6 +159,11 @@ img {
 }
 
 /* Товари */
+.cargo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .list {
   margin-top: 0;
   margin-bottom: 30;
@@ -213,6 +219,10 @@ img {
 }
 
 /* Кнопки */
+.btn:not(:last-child) {
+  margin-right: 8px;
+}
+
 .cargo .btn {
   display: inline-block;
   border-radius: 4px;

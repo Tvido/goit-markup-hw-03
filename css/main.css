@@ -22,7 +22,8 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+margin: 0;
+padding: 0;
 }
 
 img {
@@ -43,11 +44,10 @@ img {
 .container {
   /* outline: 3px solid red; */
   width: 1200px;
-  align-items: Center;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 94px;
+  /* display: flex;
+  justify-content: center;
+  align-items: Center; */
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -95,7 +95,6 @@ img {
 .drk-bg {
   background-color: var(--dark-bg-cl);
 }
-
 /* Навігація */
 .site-nav {
   display: flex;
@@ -158,6 +157,8 @@ img {
 
 /* Hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -173,6 +174,11 @@ img {
 }
 
 /* Features */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-item {
   width: calc(100% / 4 - 30px);
 }
@@ -212,6 +218,10 @@ img {
 }
 
 /* work */
+.work {
+  padding-bottom: 94px;
+}
+
 .work .list {
   display: flex;
   flex-wrap: wrap;
@@ -232,7 +242,8 @@ img {
   margin-bottom: 0;
 }
 
-.title {
+.work-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -241,6 +252,9 @@ img {
 }
 
 /* team */
+.team {padding-top: 94px;
+padding-bottom: 94px;}
+
 .team-list {
   list-style: none;
   margin-top: 0;
@@ -261,7 +275,7 @@ img {
   margin-right: 0;
 }
 
-.title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -269,7 +283,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.title {
+.team-title {
   margin-top: 0;
   margin-bottom: 50px;
 }
